@@ -51,16 +51,16 @@ function displayTable() {
     }]).then(function(answers){
 
         //connect input to database
-        connection.query("Select * FROM products where id -" + answers.id, function(error, results) {
+        connection.query("SELECT * FROM products WHERE id = " + answers.id, function(error, results) {
             try {
                 let price = results[0].price;
-                var total = (answers.quantity * price).toFixed(2)
+                var total = (answers.stockQuantity * price).toFixed(2)
 
-                if(results[0].stockQuantity < answers.quantity) {
+                if(results[0].stockQuantity < answers.stockQuantity) {
                     console.log("Sorry, not enough inventory on hand");
                     displayTable();
                 } else {
-                    connection.query("Update products stockQuantity - stockQuantity" + answers.quantity + "where id" + answers.id, function(error, results) {
+                    connection.query("Update products stockQuantity - stockQuantity" + answers.stockQuantity + "where id" + answers.id, function(error, results) {
                         console.log("Inventory updated!");
                         console.log("Your total is: $ " + total);
                         console.log("Thank you for your business! Enjoy your new products!");
