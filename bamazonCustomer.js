@@ -50,7 +50,7 @@ function displayTable() {
         message: "Please input the quantity of the item you would like to buy."
     }]).then(function(answers){
 
-        //connect input to database
+        //connect input to database functinality not working. I need a refresher on CRUD
         connection.query("SELECT * FROM products WHERE id = " + answers.id, function(error, results) {
             try {
                 let price = results[0].price;
