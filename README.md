@@ -28,3 +28,7 @@ The complete purchase process shows how much the total cost is (based on number 
 
 However, if the store does have enough of the product, It will fulfill the user’s order showing the total price and quantity of the order as well as updating the SQL database to reflect the new quantity.
 
+
+![notenoughinventory](https://user-images.githubusercontent.com/32534351/39560850-b6ad05aa-4e5e-11e8-8ee4-86ee4d41a9d5.PNG)
+**Not Enough Inventory On Hand**
+
