@@ -1,10 +1,15 @@
 MySQL-Node-Bamazon
 
+Overview
+
 Amazon-like storefront using MySQL and Node.js. It is comprised of an app for customer orders. 
+
+The database is called 'amazon.db' with a Table called 'products'. Schema is attached in the schema.js file.
+
 
 Bamazon uses these node modules: inquirer, mysql, and easy-table.
 
-
+img
 Customer Module
 The customer module lets users select a product to purchase, enter the number of items they wish to purchase, and then complete the purchase.
 
