@@ -4,10 +4,10 @@
 
 Amazon-like storefront using MySQL and Node.js. It is comprised of an app for customer orders. 
 
-The database is called 'amazon.db' with a Table called 'products'. Schema is attached in the schema.js file.
+The database is called 'amazon.db' with a Table called 'products'. Schema is attached in the schemasql.sql file.
 
 
-Bamazon uses these node modules: inquirer, mysql, and easy-table.
+This Bamazon requires 3 node modules: inquirer, mysql, and easy-table.
 
 img
 Customer Module
