@@ -1,6 +1,6 @@
-MySQL-Node-Bamazon
+**MySQL-Node-Bamazon**
 
-Overview
+**Overview**
 
 Amazon-like storefront using MySQL and Node.js. It is comprised of an app for customer orders. 
 
